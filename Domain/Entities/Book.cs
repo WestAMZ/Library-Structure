@@ -8,5 +8,6 @@ namespace Domain.Entities
     {
         public string Editorial { get; set; }
         public string Area { get; set; }
+        public virtual ICollection<LibAut> LibAut { get; set; }
     }
 }

@@ -8,5 +8,7 @@ namespace Domain.Entities
     {
         public int IdBook { get; set; }
         public int IdAuthor { get; set; }
+        public virtual ICollection<Book> Books { get; set; }
+        public virtual ICollection<Author> Authors { get; set; }
     }
 }
