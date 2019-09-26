@@ -6,8 +6,12 @@ namespace Domain.Entities
 {
     class Book : Entity
     {
+        public Book()
+        {
+            LibAut = new HashSet<LibAut>();
+        }
         public string Editorial { get; set; }
         public string Area { get; set; }
-        public virtual ICollection<LibAut> LibAut { get; set; }
+        public virtual ICollection<LibAut> LibAut { get; private set; }
     }
 }

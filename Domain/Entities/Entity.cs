@@ -8,9 +8,5 @@ namespace Domain.Entities
     {
         public int Id { get; set; }
         public DateTime CreatedDate { get; set; }
-        public Entity()
-        {
-            CreatedDate = DateTime.Now;
-        }
     }
 }

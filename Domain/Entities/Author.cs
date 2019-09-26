@@ -6,8 +6,12 @@ namespace Domain.Entities
 {
     class Author : Entity
     {
+        public Author()
+        {
+            this.Books = new HashSet<Book>();
+        }
         public string Name { get; set; }
         public string Nationality { get; set; }
-        public virtual ICollection<Book> Books { get; set; }
+        public virtual ICollection<Book> Books { get; private set; }
     }
 }
