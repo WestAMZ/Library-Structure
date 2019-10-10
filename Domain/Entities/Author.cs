@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Domain.Entities
 {
-    class Author : Entity
+    public class Author : Entity
     {
         public Author()
         {

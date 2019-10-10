@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Domain.Entities
 {
-    class LibAut : Entity
+    public class LibAut : Entity
     {
         public LibAut()
         {

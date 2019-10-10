@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Domain.Entities
 {
-    class Entity
+    public class Entity
     {
         public int Id { get; set; }
         public DateTime CreatedDate { get; set; }
